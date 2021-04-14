@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+//Se exporta entre llaves el componente que solo tiene export
+import HolaMundo /*{AdiosMundo}*/ from "./components/HolaMundo";
+import AdiosMundo from './components/AdiosMundo'
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
         >
           Learn React
         </a>
+        <HolaMundo/>
+        <AdiosMundo/>
       </header>
+      
     </div>
   );
 }
