@@ -8,6 +8,13 @@ import AdiosMundo from './components/AdiosMundo'
 import Saludar from './components/Saludar'
 
 function App() {
+
+  const user = {
+    nombre: "Ricardo Omar",
+    edad: 25,
+    color: "Azul"
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,8 +30,7 @@ function App() {
         >
           Learn React
         </a>
-        <Saludar name="Ricardo Omar" edad="25"/>
-        <Saludar name="Omar Lugo" />
+        <Saludar userInfo={user}/>
       </header>
       
     </div>

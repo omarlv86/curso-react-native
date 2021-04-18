@@ -4,7 +4,7 @@ export default function Saludar(props){
     console.log(props);
     return(
         <div>
-            <h2>Hola {props.name}, tiene {props.edad} años.</h2>
+            <p>Hola {props.userInfo.nombre}, tiene {props.userInfo.edad}, y su color favorito es el {props.userInfo.color}</p>
         </div>
     )
 }
