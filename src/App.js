@@ -15,6 +15,10 @@ function App() {
     color: "Azul"
   }
 
+  const saludarFn = (name) =>{
+    console.log("Hola " + name);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -30,7 +34,7 @@ function App() {
         >
           Learn React
         </a>
-        <Saludar userInfo={user}/>
+        <Saludar userInfo={user} saludarFn={saludarFn}/>
       </header>
       
     </div>
