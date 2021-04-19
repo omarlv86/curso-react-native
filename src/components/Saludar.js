@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Saludar(props){
     const { userInfo, saludarFn } = props;
-    const { nombre} = userInfo;
+    const { nombre = "Anonimo", edad} = userInfo; //Añadiendo un valor por defecto
     console.log(props);
 
     console.log(userInfo);
@@ -12,7 +12,7 @@ export default function Saludar(props){
             {/*
             <button onClick={() => saludarFn(userInfo.nombre)}>Saludar</button>
             */}
-            <button onClick={() => saludarFn(nombre)}>Saludar</button>
+            <button onClick={() => saludarFn(nombre, edad)}>Saludar</button>
         </div>
     )
 }
